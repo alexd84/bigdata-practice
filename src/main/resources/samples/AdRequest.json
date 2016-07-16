@@ -1,0 +1,1 @@
+{ "type": "AdRequest", "auctionId": "$auctionId", "date": "$date", "publisherId": $publisherId, "advertiserId": $advertiserId }

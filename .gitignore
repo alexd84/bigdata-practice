@@ -1,0 +1,17 @@
+.gradle
+.idea
+build/*
+.idea
+
+/.classpath
+/.project
+/.settings
+/bin
+
+bigdata-practice.iml
+bigdata-practice.ipr
+bigdata-practice.iws
+
+classes
+
+out

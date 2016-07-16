@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def hadoopVersion = "2.6.0"
+
+    compile "org.apache.hadoop:hadoop-common:$hadoopVersion"
+    compile "org.apache.hadoop:hadoop-client:$hadoopVersion"
+    compile "org.apache.hadoop:hadoop-mapreduce-client-core:$hadoopVersion"
+    compile "org.apache.hadoop:hadoop-mapreduce-client-jobclient:$hadoopVersion"
+
+    compile "org.mongodb:bson:3.0.0"
+    compile "org.json:json:20160212"
+}
+
+jar {
+    from (configurations.compile.collect {it.isDirectory() ? it : project.zipTree(it)}) {
+        exclude "META-INF/*.txt"
+    }
+}
