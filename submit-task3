@@ -1,2 +1,2 @@
-hadoop jar build/libs/bigdata-course.jar task3.DailyDriver -D mapred.reduce.tasks=1 \
+hadoop jar build/libs/bigdata-practice.jar task3.DailyDriver -D mapred.reduce.tasks=1 \
 '/user/bigdata/rtb/AdRequests,/user/bigdata/rtb/AdResponses,/user/bigdata/rtb/Impressions' /user/bigdata/out/task3

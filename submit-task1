@@ -1,2 +1,2 @@
-hadoop jar build/libs/bigdata-course.jar task1.AdvertCostDriver -D mapred.reduce.tasks=2 \
+hadoop jar build/libs/bigdata-practice.jar task1.AdvertCostDriver -D mapred.reduce.tasks=2 \
 /user/bigdata/rtb/AdResponses /user/bigdata/out/task1

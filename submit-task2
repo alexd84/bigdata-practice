@@ -1,2 +1,2 @@
-hadoop jar build/libs/bigdata-course.jar task2.FillRateDriver -D mapred.reduce.tasks=1 \
+hadoop jar build/libs/bigdata-practice.jar task2.FillRateDriver -D mapred.reduce.tasks=1 \
 '/user/bigdata/rtb/AdRequests,/user/bigdata/rtb/AdResponses' /user/bigdata/out/task2

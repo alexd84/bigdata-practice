@@ -1,2 +1,2 @@
-hadoop jar build/libs/bigdata-course.jar wordcount.WordCountDriver -D mapred.reduce.tasks=1 \
+hadoop jar build/libs/bigdata-practice.jar wordcount.WordCountDriver -D mapred.reduce.tasks=1 \
 /user/bigdata/wordcount /user/bigdata/out/wordcount
