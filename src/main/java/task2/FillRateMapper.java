@@ -8,8 +8,11 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 class FillRateMapper extends org.apache.hadoop.mapreduce.Mapper<LongWritable, Text, IntWritable, Text> {
+    private IntWritable advertId = new IntWritable();
+
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         JSONObject json = new JSONObject(value.toString());
-        context.write(null, null);
+        advertId.set(json.getInt("advertiserId"));
+        context.write(advertId, value);
     }
 }
